@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head"></head>
+<body>
+<form action="/" class="card">
+    <label>Логин</label>
+    <input required id="login"> <br>
+    <label>Пароль</label>
+    <input required id="pass"> <br>
+    <button type="submit">Ввести</button>
+</form>
+
+<div>
+    <p>Нет аккаунта?</p>
+    <a href="/reg">Зарегистрироваться</a>
+</div>
+
+<div th:insert="scripts"></div>
+<script src="js/login.js"></script>
+</body>
+</html>

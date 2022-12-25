@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head"></head>
+<body>
+<form action="/" class="card">
+    <label>Логин</label>
+    <input required id="login"> <br>
+    <label>Пароль</label>
+    <input required id="pass"> <br>
+    <label>Email</label>
+    <input required id="email"> <br>
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<div th:insert="scripts"></div>
+<script src="js/reg.js"></script>
+</body>
+</html>

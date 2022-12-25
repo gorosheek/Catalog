@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head"></head>
+<body>
+<div th:text="${cardId}" id="cardId" style="display: none" ></div>
+<form id="addForm" action="/">
+    <label>Название техники</label> <br>
+    <input required id="technicName"> <br> <br>
+    <label>Дата окончания</label> <br>
+    <input required id="date"> <br> <br>
+    <label>Сервис</label> <br>
+    <input required id="serviceName"> <br> <br>
+    <button type="submit">Добавить</button>
+    <a href="/">На главную</a>
+</form>
+
+<div th:insert="scripts"></div>
+<script src="/js/updateForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="head"></head>
+<body>
+<H1>Каталог ваших гарантий на счастливое будущее</H1>
+<div class="technics" id="technics"></div>
+<a type="button" href="/addForm">Добавить</a>
+<button type="button" id="logout">Выйти</button>
+<input type="checkbox" id="isEnded">Неактуальные</input>
+
+<div th:insert="scripts"></div>
+<script src="js/technics.js"></script>
+</body>
+</html>
